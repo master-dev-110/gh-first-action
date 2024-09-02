@@ -1,0 +1,10 @@
+name: First Workflow
+on: workflow_dispatch  #//this is about when this workflow should be executed. and we assign when this should be run. there are many events list.
+jobs: 
+  first-job:    #//name is up to su
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Greeting  #// give it step name
+        run: echo "Hellllooo WORLDD!!!"   #// define the command that should be executed in the command line
+      - name: Print Goodbye
+        run: echo "GoodBye!!!"
